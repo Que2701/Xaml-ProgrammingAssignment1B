@@ -1,0 +1,52 @@
+﻿<Window x:Class="ProgrammingAssignment1B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgrammingAssignment1B"
+        mc:Ignorable="d"
+        Title="Predicate" Height="454" Width="800"
+        Loaded="Main_Window_Loaded">
+    <Grid Margin="0,0,-0.4,116.8">
+        <GroupBox Header="Predicate" HorizontalAlignment="Left" Height="406" VerticalAlignment="Top" Width="774" Margin="10,10,0,-140">
+            <Grid Margin="0,0,-0.4,101">
+                <!-- Practical total groupbox -->
+                <GroupBox Header="Practicals  " HorizontalAlignment="Left" Height="140" VerticalAlignment="Top" Width="213" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+                    <Grid>
+                        <Label Content="Practical Total:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0"/>
+                        <TextBox Name="practicalTotalTextBox"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106" Margin="84,10,0,0"/>
+                    </Grid>
+                </GroupBox>
+                <!-- Term tests groupbox -->
+                <GroupBox Header="Tests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Height="140"  Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="235,0,0,0">
+                    <Grid>
+                        <Label Content="Term 1:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" />
+                        <TextBox x:Name="term1TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Width="123" Height="23" Margin="67,12,0,0" />
+                        <Label Content="Term 2:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,50,0,0" />
+                        <TextBox x:Name="term2TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Width="123" Height="23" Margin="67,50,0,0" />
+                        <Label Content="Additional:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,90,0,0" />
+                        <TextBox x:Name="additionalTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Width="123" Height="23" Margin="67,90,0,0"/>
+
+                    </Grid>
+                </GroupBox>
+                <!-- Projects groupbox -->
+                <GroupBox Header="Projects" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Height="140" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="473,0,0,0">
+                    <Grid>
+                        <Label Content="Project Total:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0"/>
+                        <TextBox x:Name="projectTotalTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Width="113" Height="23" Margin="78,10,0,0" />
+                    </Grid>
+                </GroupBox>
+                <Label Content="Simulate Marks" FontStyle="Normal" FontWeight="Bold" HorizontalAlignment="Left" Margin="346,159,0,0" VerticalAlignment="Top" Width="102"/>
+                <Button x:Name="generateGoodMarksButton" Content="Good Marks" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="8.02,8.452" Margin="473,162,0,0" Click="Generate_Good_Marks_Button_Click"/>
+                <Button x:Name="generateBadMarksButton" Content="Bad Marks" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="8.02,8.452" Margin="611,162,0,0" Click="Generate_Bad_Marks_Button_Click"/>
+                <Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="8.02,8.452" Margin="473,202,0,0" Click="Calculate_Marks_Button_Click"/>
+                <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="8.02,8.452" Margin="611,202,0,0" Click="Button_Clear_Click"/>
+                <Label x:Name="predicateResultsLabel" Content="" FontStyle="Normal" FontWeight="Normal" HorizontalAlignment="Left" Margin="28,217,0,0" VerticalAlignment="Top" Width="Auto"/>
+                <Label x:Name="predicateNeededLabel" Content="" FontStyle="Normal" FontWeight="Normal" HorizontalAlignment="Left" Margin="28,248,0,-15.6" VerticalAlignment="Top" Width="Auto"/>
+
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+
+</Window>
